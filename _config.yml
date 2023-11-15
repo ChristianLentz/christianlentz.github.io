@@ -1,4 +1,10 @@
-theme: jekyll-theme-minimal
 title: Christian Lentz
+email: clentz[at]macalester.edu
 description: Macalester College, Mathematics and Compter Science
-image: /images/ChristianLentz_picture.png
+url: https://christianlentz.github.io/
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-feed
