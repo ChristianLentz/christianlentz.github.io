@@ -1,6 +1,6 @@
 # About Me
 
-I am a current undergraduate student at Macalester College in St. Paul, Minnesota. I have nearly finished my BA in Mathematics and Computer Science and hope to attend graduate school as a next step towards a career in research and academia. This website highlights my research interests and some of the projects that I have completed during my time as an undetgraduate. If you are interested in my research/work experience or wish to contact me, then check out [my CV](ChristianLentz_CV.pdf).
+I am a current undergraduate student at Macalester College in St. Paul, Minnesota. I have nearly finished my BA in Mathematics and Computer Science and hope to attend graduate school as a next step towards a career in research and academia. This website highlights my research interests and some of the projects that I have completed during my time as an undergraduate. If you are interested in my research/work experience or wish to contact me, then check out [my CV](ChristianLentz_CV.pdf).
 
 # Research Interests
 
