@@ -1,6 +1,10 @@
 # About Me
 
-I am a current undergraduate student at Macalester College in St. Paul, Minnesota. I have nearly finished my BA in Mathematics and Computer Science and hope to attend graduate school as a next step towards a career in research and academia. This website is to highlights some of the projects that I have completed during my time as an undetgraduate. If you are interested in my research and work experience or contacting me, then check out [my CV](FILE_NAME.pdf)
+I am a current undergraduate student at Macalester College in St. Paul, Minnesota. I have nearly finished my BA in Mathematics and Computer Science and hope to attend graduate school as a next step towards a career in research and academia. This website highlights my research interests and some of the projects that I have completed during my time as an undetgraduate. If you are interested in my research/work experience or wish to contact me, then check out [my CV](FILE_NAME.pdf)
+
+# Research Interests
+
+I am most interested in continued study and research in artificial intelligence, algorithms and theoretical computer science and pure mathematics, including algebra and topology. My ultimate goal is to apply knowledge from these areas in computational topology and machine learning in order to understand how to create new and efficient ways of understanding and analyzing data. 
 
 # Research Projects 
 
