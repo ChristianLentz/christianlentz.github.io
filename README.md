@@ -18,10 +18,10 @@ This project started as a research assistantship during the summer of 2023 with 
 
 This project was completed as my computer science capstone during the Fall of 2023, when I took an introductory course in Artificial Intelligence with my academic advisor [Susan Fox](https://sites.google.com/macalester.edu/susan-fox-profile/home). This project was an investigation of cellular automaton, artificial life and genetic algorithms. The explicit goal was to evolve a population of random seeds to behave similar to glider tilings. Check out this [github repository](https://github.com/comp484-IntroToAI/project-ana-christian) to see our implementation in Python, and [this paper]() detailing our work. 
 
-## Investigations and Applications of Numerical Techniques for PDEs | 10/2023 - 12/2023
+## Numerical Techniques for the Wave Equation | 10/2023 - 12/2023
 ### Macalester College Mathematical Modeling Capstone 
 
-This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling course with [Will Mitchell](https://sites.google.com/macalester.edu/willmitchell/home?pli=1). This was primarily an investigation of numerical techniques for approximating solutions to partial differential equations. In particular, I used finite differences and Fourier spectral methods to model waves with periodic boundary conditions. Check out this [github repository](https://github.com/ChristianLentz/Math437Capstone) to see my implementation in Python, and [this file]() to see the paper.  
+This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling course with [Will Mitchell](https://sites.google.com/macalester.edu/willmitchell/home?pli=1). This was primarily an investigation of numerical techniques for approximating solutions to partial differential equations, and in particular finite differences and Fourier spectral methods. I studied each of these techniques using the wave equation, and implemented both. Check out this [github repository](https://github.com/ChristianLentz/Math437Capstone) to see my implementation in Python, and [this file]() to see the paper.  
 
 ## Mac Virtual Trade Center | 09/2023 - 12/2023 
 ### Macalester College Software Development Course
