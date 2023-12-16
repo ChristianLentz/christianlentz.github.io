@@ -21,7 +21,7 @@ This project was completed as my computer science capstone during the Fall of 20
 ## Numerical Techniques for the Wave Equation | 10/2023 - 12/2023
 ### Macalester College Mathematical Modeling Capstone 
 
-This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling course with [Will Mitchell](https://sites.google.com/macalester.edu/willmitchell/home?pli=1). This was primarily an investigation of numerical techniques for approximating solutions to partial differential equations, and in particular finite differences and Fourier spectral methods. I studied each of these techniques using the wave equation, and implemented both. Check out this [github repository](https://github.com/ChristianLentz/Math437Capstone) to see my implementation in Python, and [this file]() to see the paper.  
+This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling course with [Will Mitchell](https://sites.google.com/macalester.edu/willmitchell/home?pli=1). This was primarily an investigation of numerical techniques for approximating solutions to partial differential equations, and in particular finite differences and Fourier spectral methods. I studied each of these techniques using the wave equation, and implemented both. Check out this [github repository](https://github.com/ChristianLentz/Math437Capstone) to see my implementation in Python, and [this file](files/mathModeling_paper.pdf) to see the paper.  
 
 ## Mac Virtual Trade Center | 09/2023 - 12/2023 
 ### Macalester College Software Development Course
