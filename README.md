@@ -1,34 +1,3 @@
 # About Me
 
 I am a current undergraduate student at Macalester College in St. Paul, Minnesota. I have nearly finished my BA in Mathematics and Computer Science and hope to attend graduate school as a next step towards a career in research and academia. This website highlights my research interests and some of the projects that I have completed during my time as an undergraduate. If you are interested in my research/work experience or wish to contact me, then check out [my CV](files/ChristianLentz_CV.pdf).
-
-# Research Interests
-
-I am most interested in continued study and research in artificial intelligence, algorithms, theoretical computer science and pure mathematics, including algebra and topology. My ultimate goal is to apply knowledge from these areas in computational topology and machine learning in order to understand how to create new and efficient ways of understanding and analyzing data. 
-
-# Research Projects 
-
-## A Computational Approach for Persistent Relative Homology | 05/2023 - present
-### Macalester College Honors Research 
-
-This project started as a research assistantship during the summer of 2023 with my academic advisor [Lori Ziegelmeier](https://www.loriziegelmeier.com/), and [Greg Henselman-Petrusek](https://www.gregoryhenselman.org/index.html). The goal of this project was to use recently presented matrix decomposition techniques to develop a flexible and efficient method for computing persistent relative homology which can be used to compute a barcode or persistence diagram, but also allows for expeditious extraction of homological generators via matched bases. Presently, we are working to prove stability of the algorithm in addition to providing an implementation in the Open Applied Topology (OAT) project. I have spoken about this research at the 2023 Fall Meeting of the Mathematical Association of America's North Central Section and at the AIM-AMS Special Session on *Applied Topology Beyond Persistence Diagrams* (see the presentation [here](files/PRH_slides_JMM.pdf)) at the 2024 Joint Mathematics Meetings. There is a paper in preparation currently. 
-
-## Evolving Mobile Agents in Conway’s Game of Life | 09/2023 - 12/2023
-### Macalester College Artificial Intelligence Capstone 
-
-This project was completed as my computer science capstone during the Fall of 2023, when I took an introductory course in Artificial Intelligence with my academic advisor [Susan Fox](https://sites.google.com/macalester.edu/susan-fox-profile/home). This project was an investigation of cellular automaton, artificial life and genetic algorithms. The explicit goal was to evolve a population of random seeds to behave similar to glider tilings. Check out this [github repository](https://github.com/comp484-IntroToAI/project-ana-christian) to see our implementation in Python, and [this paper](files/IntroToAI_paper.pdf) detailing our work. 
-
-## Numerical Techniques for the Wave Equation | 10/2023 - 12/2023
-### Macalester College Mathematical Modeling Capstone 
-
-This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling course with [Will Mitchell](https://sites.google.com/macalester.edu/willmitchell/home?pli=1). This was primarily an investigation of numerical techniques for approximating solutions to partial differential equations, and in particular finite differences and Fourier spectral methods. I studied each of these techniques using the wave equation, and implemented both. Check out this [github repository](https://github.com/ChristianLentz/Math437Capstone) to see my implementation in Python, and [this file](files/mathModeling_paper.pdf) to see the paper.  
-
-## Mac Virtual Trade Center | 09/2023 - 12/2023 
-### Macalester College Software Development Course
-
-This project was built for my software development course at Macalester College, and provides a space for Macalester students and faculty to buy, sell and trade used goods at little-to-no cost. The project was built using vanilla JavaScript, HTML, CSS, the Google Firebase SDK for backend services and Webpack CLI for module bundling. Check out the repository [here](https://github.com/ChristianLentz/comp225-project-team-Jachris/tree/main). 
-
-## An Investigation of Algorithms for Convex Polygon Triangulation | 10/2022 - 12/2022
-### Macalester College Algorithms Course
-
-This project was a rather brief introduction to and exploration of popular triangulation algorithms for convex polygons. This served as a culminating project to my introductory algorithms course at Macalester College, and was my first experience writing a research-style paper. The project includes an implementtion of the ear-clipping algorithm using quick hull and selection sort in Java. Check out this [github repository](https://github.com/Comp-221-Macalester/algorithms-project-nolan-christian) to see our implementation, and [this file](files/TriangulationPaper.pdf) to see the paper. 
