@@ -1,0 +1,2 @@
+# ignore changes to _site as it is only used to deploy staging branch locally 
+_site/
