@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <title>Christian Lentz | Home </title>
+  <link href="/style.css" rel="stylesheet">
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-  <title>About Me | Christian Lentz</title>
   <meta name="generator" content="Jekyll v3.9.3" />
   <meta property="og:title" content="About Me" />
   <meta property="og:locale" content="en_US" />
@@ -28,136 +28,198 @@
     "url":"http://localhost:4000/"}
   </script>
   <!-- End Jekyll SEO tag -->
-
-  <link rel="stylesheet" href="/assets/css/style.css?v=49a1a7ffd2a59e6f73308d51a3bbac15aceec52b">
-
 </head>
 
 <body>
-  <div class="wrapper">
 
+  <div class="body-wrapper">
+
+    <!-- website header: image, name, contact etc. -->
     <header>
-      <h1><a href="http://localhost:4000/">Christian Lentz</a></h1>
+      <h1>Christian Lentz</h1>
       <p>BA, Mathematics and Compter Science</p>
-      <p class="view"><a href="https://github.com/ChristianLentz/christianlentz.github.io">View the Project on GitHub
-          <small>ChristianLentz/christianlentz.github.io</small></a></p>
-      <!-- image styling -->
-      <style>
-        img {
-          border: 1px solid #ddd;
-          border-radius: 4px;
-          padding: 5px;
-          width: fit-content;
-          height: fit-content;
-        }
-      </style>
-      <!-- headshot photo -->
-      <p> <img src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p>
+      <p> <img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p>
     </header>
 
-    <section>
-      <h1 id="about-me">About Me</h1>
+    <section class="title"><h2 id="about">About Me</h2></section>
+
+    <section class="content">
       <p>I am a recent graduate of Macalester College in St. Paul, Minnesota where I obtained BAs in both 
         Mathematics and Computer Science. I am a lifelong learner and am always ready to take on a new challenge 
         or learn a new skill. I have recently relocated to the greater Boston area and am looking to begin my career. 
         I am open to various positions and am eager to apply my programming and mathematics skills. I am particularly 
         passionate about topics in algorithms, theoretical computer science, AI and machine learning, and 
-        mathematics including algebra, analysis and topology. If you are interested in my work experience or wish to 
-        contact me, then check out <a href="files/ChristianLentz_CV.pdf">my CV</a>. If you want to know a bit about 
-        my educational background, then checkout <a href="files/MacalesterTranscript.pdf">my undergraduate transcript</a>.</p>
-
-      <h1 id="research-projects">Projects</h1>
-
-        <h2 id="prh-tda">Persistent Relative Homology for 
-        Topological Data Analysis | 05/2023 - present</h2>
-          <h3 id="honors-research">Macalester College Honors Research</h3>
-          <p>This project started as a research assistantship during the summer of 2023 with my academic advisor <a
-          href="https://www.loriziegelmeier.com/">Lori Ziegelmeier</a>, and Greg Henselman-Petrusek of Pacific Northwest National 
-          Laboratory. Persistent homology is a key tool in applied topology and TDA, and our work provides 
-          an alternative approach to compute a variant known as persistent relative homolgy. My work has contributed to all aspects 
-          of this project, including the developemnt of the algorithm itself as well as research and literature review. My technical 
-          contributions include a proof of correctness and stability. Soon, the algorithm will be implemented in the Open Applied 
-          Topology (OAT) project using the Rust programming language. I have spoken about this research at the 2023 Fall Meeting of 
-          the Mathematical Association of America’s North Central Section, and at the AIM-AMS Special Session on <em>Applied Topology 
-          Beyond Persistence Diagrams</em> (see the presentation <a href="/files/PRH_slides_JMM.pdf">here</a>) at the 2024 Joint 
-          Mathematics Meetings. I also wrote a paper and defended this work for my honors thesis at Macalester College. See the presentation 
-          <a href="/files/PRH_slides_honors.pdf">here</a> and the paper <a href="/files/MSCS_HonorsThesis_ChristianLentz.pdf">here</a>.
-          </p>
-
-        <h2 id="digit-recognizer"> Digit Classififcation Algorithm | 05/2024 </h2>
-          <h3 id="personal-proj-digits"> Personal Project </h3>
-          <p>
-            This was a brief personal project inspired by a homework assignment in my undergraduate numerical analysis course. 
-            Using a dataset containing nearly 10,000 images of handwritten digits (0-9), I wrote two machine learning algorithms to 
-            classify the images. The first algorithm uses a Least Squares approach, and is implemented in three different ways
-            including via the normal equations, the built in QR algorithm in R, and via the Singular Value Decomposition. The other 
-            approach uses the Low Rank Approximation via the Singular Value Decomposition. Click 
-            <a href="/pages/DigitRecognizer.html"> here </a> to see the project. 
-          </p>
-
-        <h2 id="conway-gol">Evolving Mobile Agents in Conway’s Game of Life | 09/2023 - 12/2023</h2>
-          <h3 id="ai-capstone">Macalester College Artificial Intelligence Capstone </h3>
-            <p>This project was completed as my computer science capstone during the Fall of 2023, when I took an introductory
-            course in Artificial Intelligence with my academic advisor <a
-            href="https://sites.google.com/macalester.edu/susan-fox-profile/home">Susan Fox</a>. This project was an
-            investigation of cellular automaton, artificial life and genetic algorithms. The explicit goal was
-            to evolve a population of random seeds to behave similar to glider tilings. Check out this <a
-            href="https://github.com/ChristianLentz/MobileTilingsGOL">github repository</a> to see our
-            implementation in Python, and <a href="/files/IntroToAI_paper.pdf">this paper</a> detailing our work.</p>
-
-            <p> <img src="/images/gosper.png" alt="gosper" /> </p>
-
-        <h2 id="wave-eqn">Numerical Techniques for the Wave Equation | 10/2023 - 12/2023</h2>
-          <h3 id="math-capstone">Macalester College Mathematical Modeling Capstone</h3>
-            <p>This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling
-            course with <a href="https://sites.google.com/macalester.edu/willmitchell/home?pli=1">Will Mitchell</a>. This
-            was primarily an investigation of numerical techniques for approximating solutions to partial
-            differential equations, and in particular finite differences and the Fourier spectral method. I studied each of
-            these techniques using the wave equation, and implemented both. Check out this <a
-            href="https://github.com/ChristianLentz/Math437Capstone">github repository</a> to see my implementation in
-            Python and <a href="/files/mathModeling_paper.pdf">this paper</a> which describes my work in more detail.</p>
-
-            <p> <img src="/images/2DWaveVec2.gif" alt="wave" /> </p>
-
-        <h2 id="trade-center">Mac Virtual Trade Center | 09/2023 - 12/2023</h2>
-          <h3 id="software-dev">Macalester College Software Development Course</h3>
-          <p>This project was built for my software development course at Macalester College, and provides a space for
-            Macalester students and faculty to buy, sell and trade used goods at little-to-no cost. The project was built
-            using vanilla JavaScript, HTML, CSS, npm for package mangement, the Google Firebase SDK for backend services 
-            including the <em>Firestore</em> NoSQL database and Webpack CLI for module bundling. Check out the repository 
-            <a href="https://github.com/ChristianLentz/comp225-project-team-Jachris/tree/main">here</a>.</p>
-
-            <p> <img src="/images/MacTrade.png" alt="trade center" /> </p>
-
-        <h2 id="ploygon-triangulation">Algorithms for Convex Polygon Triangulation | 10/2022 - 12/2022</h2>
-          <h3 id="algs-course">Macalester College Algorithms Course</h3>
-          <p>This project was a rather brief introduction to and exploration of popular triangulation algorithms for convex
-          polygons. This served as a culminating project to my introductory algorithms course at Macalester College, and
-          was my first experience writing a research-style paper. The project includes an
-          implementtion of the ear-clipping algorithm using quick-hull and selection sort in Java. Check out this
-          <a href="https://github.com/ChristianLentz/Triangulator">github repository</a> to see
-          our implementation, and <a href="files/TriangulationPaper.pdf">this file</a> to see the paper.
-          </p>
-
-          <p> <img src="/images/Triangulation1.png" alt="triangulate" /> </p>
-
-          <h2 id="shell">Linux Shell | 12/2022</h2>
-          <h3 id="systems-course">Macalester College Computer Systems Course</h3>
-          <p>This is a classic project for undergraduate computer science students and was a culminating project/homework for 
-            my computer systems course at Macalester College. This project exemplifies my understanding of the C programming 
-            language and allowed me to apply a number of skills and techniques that I learned in computer systems, including 
-            array usage and allocation, pointer math, and the basics of parallel processes. Check out the repository 
-            <a href="https://github.com/ChristianLentz/LinuxShell">here</a>.
-          </p>
-
+        mathematics including algebra, analysis and topology. Check out 
+        <a href="files/ChristianLentz_CV.pdf">my CV</a> to learn more about my background. 
     </section>
+
+    <section class="title"><h2 id="projects">Projects</h2></section>
+
+      <section class="content">
+        <h3 id="prh-tda">Persistent Relative Homology for TDA</h3>
+          <h4 id="prh-tda-date">05/2023 - present</h4>
+            <h5 id="prh-tda-description">Honors Research</h5>
+              <p>
+                This project started as a research assistantship during the summer of 2023 with my academic advisor <a
+                href="https://www.loriziegelmeier.com/">Lori Ziegelmeier</a>, and Greg Henselman-Petrusek of Pacific Northwest National 
+                Laboratory. In recent years, persistent homology has become an increasingly popular technique in applied topology and 
+                topological data analysis (TDA). Our work describes a new approach to compute a variant known as persistent relative homolgy. 
+                My work has contributed to all aspects of this project including the developemnt of the algorithm, research and literature 
+                review. My technical contributions include a proof of correctness and stability. The algorithm will soon be implemented 
+                in the <a href="https://meetings.ams.org/math/jmm2024/meetingapp.cgi/Paper/33362">Open Applied Topology (OAT)</a> project 
+                using the Rust programming language. I have presented this research at multiple conferences including the Mathematical 
+                Association of America NCS and the <a href="https://meetings.ams.org/math/jmm2024/meetingapp.cgi/Paper/30153">2024 Joint Mathematics Meetings</a>. 
+                I also defended this research for my honors thesis at Macalester College. Check out the links below to see the project in 
+                more detail. 
+                <div class="row">
+                  <div class="column">
+                    <a href="/files/MSCS_HonorsThesis_ChristianLentz.pdf"> <img class="img-clickable" src="/images/PRH_paper_screenshot.png" alt="PRH paper" /> </a> 
+                  </div>
+                  <div class="column">
+                    <a href="/files/PRH_slides_honors.pdf"> <img class="img-clickable" src="/images/filteredSpace.png" alt="filtered topological space" /> </a> 
+                  </div>
+                </div>
+              </p>
+      </section>
+
+      <section class="content">
+        <h3 id="digit-recognizer"> Digit Classififcation Algorithm </h3>
+          <h4 id="digit-recognizer-date"> 05/24 </h4>
+            <h5 id="digit-recognizer-description"> Personal Project </h5>
+              <p>
+                This was a brief personal project inspired by a homework assignment in my undergraduate numerical analysis course. 
+                Using a dataset containing nearly 10,000 images of handwritten digits (0-9), I wrote two machine learning algorithms to 
+                classify the images. The first algorithm uses a Least Squares approach, and is implemented in three different ways
+                including via the normal equations, the built in QR algorithm in R, and via the Singular Value Decomposition. The other 
+                approach uses the Low Rank Approximation via the Singular Value Decomposition. Check out the project below. 
+                <div class="row">
+                  <div class="column">
+                    <a href="/pages/DigitRecognizer.html"> <img class="img-clickable" src="/images/digit_rec_screenshot.png" alt="digit recognizer code" /> </a> 
+                  </div>
+                </div>
+              </p>
+      </section>
+
+      <section class="content">
+        <h3 id="conway-gol">Evolving Mobile Agents in Conway’s Game of Life</h3>
+          <h4 id="conway-gol-date">09/2023 - 12/2023</h4>
+            <h5 id="conway-gol-description">Artificial Intelligence Capstone </h5>
+              <p>
+                This project was completed as my computer science capstone during the Fall of 2023, when I took an introductory
+                course in Artificial Intelligence with my academic advisor <a href="https://sites.google.com/macalester.edu/susan-fox-profile/home">Susan Fox</a>. 
+                Using the popular cellular automaton <a href="https://conwaylife.com/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>, 
+                we investigated to capacity for agents (or cell tilings) within the game to exhibit emergent or intelligent behavior. 
+                The explicit goal was to write a genetic algorithm which, given a randomly generated popualtion of cell tilings, could 
+                be used to evolve subsequent generations of cell tilings which are capable of directed growth and movement. Our 
+                genetic algorithm is implemented in Python and required the NumPy library and elementary linear algebra in order 
+                to assess the behavior and fitness of the population. The project also includes a front-end animation built with 
+                Matplotlib. Check out the links below to see the project in more detail. 
+                <div class="row">
+                  <div class="column">
+                    <a href="https://github.com/ChristianLentz/MobileTilingsGOL"> <img class="img-clickable" src="/images/seed_directedMove2.gif" alt="tiling gif" /> </a> 
+                  </div>
+                  <div class="column">
+                    <a href="/files/IntroToAI_paper.pdf"> <img class="img-clickable" src="/images/AI_paper_screenshot.png" alt="GOL paper" /> </a> 
+                  </div>
+                </div>
+              </p>
+      </section>
+
+      <section class="content">
+        <h3 id="wave-eqn">Numerical Techniques for the Wave Equation</h3>
+          <h4 id="wave-eqn-date">10/2023 - 12/2023</h4>
+            <h5 id="wave-eqn-description">Mathematical Modeling Capstone</h5>
+              <p>
+                This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling
+                course with <a href="https://sites.google.com/macalester.edu/willmitchell/home?pli=1">Will Mitchell</a>. This
+                was primarily an investigation of numerical techniques for approximating solutions to partial
+                differential equations, and in particular finite differences and the Fourier spectral method. I studied each of
+                these techniques using the wave equation, and implemented both. Check out the links below to see my work in 
+                more detail. 
+                <div class="row">
+                  <div class="column">
+                    <a href="/files/mathModeling_paper.pdf"> <img class="img-clickable" src="/images/FD_1D_5.png" alt="1D wave discrete" /> </a> 
+                  </div>
+                  <div class="column">
+                    <a href="https://github.com/ChristianLentz/Math437Capstone"> <img class="img-clickable" src="/images/2DWaveVec2.gif" alt="2D wave GIF" /> </a> 
+                  </div>
+                </div>
+              </p>
+      </section>
+
+      <section class="content">
+        <h3 id="trade-center">Mac Virtual Trade Center</h3>
+          <h4 id="trade-center-date">09/2023 - 12/2023</h4>
+            <h5 id="trade-center-description">Software Development Course</h5>
+              <p>
+                This project was built for my software development course at Macalester College, and provides a space for
+                Macalester students and faculty to buy, sell and trade used goods at little-to-no cost. The project was built
+                using vanilla JavaScript, HTML, CSS, npm for package mangement, the Google Firebase SDK for backend services 
+                including the <em>Firestore</em> NoSQL database and Webpack CLI for module bundling. Check out the repository
+                below. 
+                <div class="row">
+                  <div class="column">
+                    <a href="https://github.com/ChristianLentz/comp225-project-team-Jachris/tree/main"> <img class="img-clickable" src="/images/MacTrade.png" alt="mac trade center" /> </a> 
+                  </div>
+                </div>
+              </p>
+      </section>
+
+      <section class="content">
+        <h3 id="ploy-tri">Algorithms for Convex Polygon Triangulation</h3>
+          <h4 id="poly-tri-date">10/2022 - 12/2022</h4>
+            <h5 id="poly-tri-description">Algorithms Course</h5>
+              <p>
+                This project was a brief introduction to and exploration of popular triangulation algorithms for convex
+                polygons. This served as a culminating project to my introductory algorithms course at Macalester College, and
+                was my first experience writing a research-style paper. The project includes an implementtion of the ear-clipping 
+                algorithm in Java using quick-hull and selection sort. Check out the links below to see our work in more detail.  
+                <div class="row">
+                  <div class="column">
+                    <a href="https://github.com/ChristianLentz/Triangulator"> <img class="img-clickable" src="/images/Triangulation1.png" alt="triangulated polygon" /> </a> 
+                  </div>
+                  <div class="column">
+                    <a href="files/TriangulationPaper.pdf"> <img class="img-clickable" src="/images/triangulation_paper_screenshot.png" alt="triangulation paper" /> </a> 
+                  </div>
+                </div>
+              </p>
+      </section>
+
+      <section class="content">
+        <h3 id="shell">Linux Shell</h3>
+          <h4 id="shell-date">12/2022</h4>
+            <h5 id="shell-description">Computer Systems Course</h5>
+              <p>
+                This is a classic project for undergraduate computer science students and was a culminating project/homework for 
+                my introductory computer systems course at Macalester College. This project exemplifies my understanding of the C programming 
+                language and allowed me to apply a number of skills and techniques that I learned in computer systems including 
+                array usage and allocation, pointer math, and the basics of parallel processes. Check out the repository below. 
+                <div class="row">
+                  <div class="column">
+                    <a href="https://github.com/ChristianLentz/LinuxShell"> <img class="img-clickable" src="/images/shell_main.png" alt="shell" /> </a> 
+                  </div>
+                </div>
+              </p>
+      </section>
+
     <footer>
-      <p>This project is maintained by <a href="https://github.com/ChristianLentz">ChristianLentz</a></p>
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
-      </p>
+      <div class="row">
+        <div class="column">
+          <a href="https://github.com/ChristianLentz"> <img class="img-clickable" src="/images/github_logo.jpg" alt="github logo" /> </a> 
+        </div>
+        <div class="column">
+          <a href="https://www.linkedin.com/in/cjlentz23"> <img class="img-clickable" src="/images/linkedin_logo.jpg" alt="linkedin logo" /> </a> 
+        </div>
+        <div class="column">
+          <a href="mailto:christianlentz234@gmail.com"> <img class="img-clickable" src="/images/gmail_logo.jpg" alt="gmail logo" /> </a> 
+        </div>
+      </div>
     </footer>
+
   </div>
+
   <script src="/assets/js/scale.fix.js"></script>
+
 </body>
 
 </html>
