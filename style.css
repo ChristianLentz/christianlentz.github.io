@@ -29,6 +29,25 @@ body {
     }
 } 
 
+/* nav bar styling */ 
+/* center the entire nav bar div */
+#navright {
+    text-align: center;
+    list-style-type: none; 
+    font-size: 20px;
+}
+/* list styling for items on the nav bar, wrapped in ul */
+#nav-items-wrapper {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+/* style for each item on the nav bar */
+#nav-item {
+    float: left;
+    padding: 2px 5px;
+}
+
 /* headers and paragraph styling */
 h1, h2, h3, h4, h5, h6, p { color: whitesmoke; margin: 0 0 10px; }
 p, ul, ol, table, pre, dl { margin: 0 0 20px; }
@@ -59,6 +78,11 @@ img {
     height: fit-content;
     max-height: 100%;
 }
+.img-header:hover, .img-header:focus { 
+    border: 3px solid rgb(240, 244, 6);
+    border-radius: 4px;
+    padding: 5px;
+}
 
 /* clickable image styling */
 .img-clickable { 
@@ -85,12 +109,11 @@ img {
 .column {
     flex: 33.33%;
     padding: 7px;
-    /* text-align: center; */
 }
 
 /* header and footer */
-header { width: 270px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased; text-align:center }
-footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-smoothing: subpixel-antialiased; }
+header { display: inline-block; width: 270px; position: fixed; -webkit-font-smoothing: subpixel-antialiased; text-align:center }
+footer { display: inline-block; width: 270px; position: fixed; bottom: 50px; -webkit-font-smoothing: subpixel-antialiased; }
 
 /* media styling */
 @media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }

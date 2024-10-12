@@ -12,8 +12,8 @@
   <meta name="generator" content="Jekyll v3.9.3" />
   <meta property="og:title" content="About Me" />
   <meta property="og:locale" content="en_US" />
-  <meta name="description" content="Macalester College, Mathematics and Compter Science" />
-  <meta property="og:description" content="Macalester College, Mathematics and Compter Science" />
+  <meta name="description" content="Welcome to my portfolio!" />
+  <meta property="og:description" content="Welcome to my portfolio!" />
   <link rel="canonical" href="http://localhost:4000/" />
   <meta property="og:url" content="https://christianlentz.github.io/" />
   <meta property="og:site_name" content="Christian Lentz" />
@@ -35,13 +35,24 @@
 
   <div class="body-wrapper">
 
-    <!-- website header: image, name, contact etc. -->
+    <!-- website header: image, name, contact, navbar, etc. -->
     <header>
       <h1>Christian Lentz</h1>
       <p>BA, Mathematics and Compter Science</p>
-      <p> <img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p>
+      <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
+      <nav id="nav-bar">
+        <div id="navright">
+          <ul id="nav-items-wrapper"></ul>
+            <li class="nav-item"><a href="/pages/Research/research.html"> Research</a></li>
+            <li class="nav-item"><a href="/pages/CV/cv.html"> Curriculum Vitae</a></li>
+            <li class="nav-item"><a href="/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
+            <li class="nav-item"><a href="/pages/AboutThis/aboutThis.html"> About This Project</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
+    <!-- page content -->
     <section class="title"><h2 id="about">About Me</h2></section>
 
     <section class="content">
@@ -197,7 +208,8 @@
                 </div>
               </p>
       </section>
-
+    
+    <!-- footer and contact info -->
     <footer>
       <div class="row">
         <div class="column">

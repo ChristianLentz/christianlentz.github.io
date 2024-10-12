@@ -1,13 +1,17 @@
 # About This Project
 
-I started working on this portfolio during December of 2023. At the time, I was nearing completion of my undergraduate degrees and was starting to think about my career or attending graduate school. This portfolio includes a brief personal summary as well as my CV, undergradute transcript and some of my favorite personal and academic projects to date. See the webiste [here](https://christianlentz.github.io/)!
+I started working on this portfolio during December of 2023. At the time, I was nearing completion of my undergraduate degrees and was starting to think about my career or attending graduate school. This portfolio includes a brief personal summary as well as my CV and some of my favorite personal and academic projects to date. See the webiste [here](https://christianlentz.github.io/)!
 
 ## Personal Development Notes
 
-This GitHub pages website is built with Ruby and Jekyll, and is configured with a main and staging branch. When making changes, always ensure that you are working in the staging branch:
+This GitHub pages website is built with Ruby and Jekyll, hosted on Github Pages, and is configured with a main and staging branch. When making changes, always ensure that you are working in the staging branch:
 
 - Ensure that `pwd` is C:\ ... \christianlentz.github.io
 - Run `git checkout staging`
+- Make and commit changes
+- Create a new pull request and merge into main when ready
+
+However, the workflow for this project does allow direct commits to main if needed.
 
 Here are a few basics for working with Ruby, Gems and Bundler:
 
