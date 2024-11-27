@@ -35,26 +35,29 @@
 
 <body>
 
+  <!-- note that the canvas appears within the body, but is layered such that the elements of the body appear above the animated elements of the canvas! -->
+  <canvas id="animationCanvas"></canvas>
+
   <div class="header-footer-wrapper">
 
     <!-- website header: image, name, contact, navbar, etc. -->
     <header>
-        <h1>Christian Lentz</h1>
-        <p>BA, Mathematics and Computer Science</p>
-        <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
-        <nav id="nav-bar">
-          <div id="navright">
-            <ul id="nav-items-wrapper"></ul>
-              <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
-              <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
-              <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
-              <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      <h1>Christian Lentz</h1>
+      <p>BA, Mathematics and Computer Science</p>
+      <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
+      <nav id="nav-bar">
+        <div id="navright">
+          <ul id="nav-items-wrapper"></ul>
+            <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
+            <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
+            <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
+            <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-      <!-- footer and contact info -->
+    <!-- footer and contact info -->
     <footer>
       <div class="row">
         <div class="column">
@@ -71,17 +74,67 @@
 
   </div>
 
-  <div class="body-wrapper">
+  <div class="main-body-wrapper">
 
-    <!-- page content -->
-    <section class="title"><h2 id="research-interests">Interests</h2></section>
+    <section class="title"><h2 id="research-interests">Interests</h2>
+      <div id="body-list">
+        <li class="body-li-item"> <h3 id="prh-alg">Mathematics:</h3> <p>Topology, Geometry, Homological algebra</p> </li>
+        <li class="body-li-item"><h3 id="prh-alg">Applied Mathematics: </h3> <p>Numerical analysis, Applied algebra, Computational geometry</p> </li>
+        <li class="body-li-item"><h3 id="prh-alg">Algorithms and Data Science: </h3> <p>Topological data analysis, Machine learning, Complexity Theory </p>
+        
+        </li>
+      </div>
+    </section>
+      
     <section class="title"><h2 id="current-research">Current Projects</h2></section>
-    <section class="title"><h2 id="undergraduate">Undergraduate Capstones</h2></section>
-    <section class="title"><h2 id="publications">Publications</h2></section>
+
+    <section class="content">
+      <h3 id="prh-alg">An Algorithm for Persistent Relative Homology</h3>
+        <p>
+          Working under Drs. <a href="https://www.loriziegelmeier.com/">Lori Ziegelmeier</a> and Gregory Henselman-Petrusek (PNNL) I
+          developed a novel algorithm for the direct computation of persistent relative homology. Utilizing a recently presented matrix factorization 
+          scheme, our method can compute cycle representatives and persistence modules for a pair of topological spaces equipped with arbitrary 
+          filtrations. The only restriction on these filtrations is that the inclusion of spaces be preserved at each level. To our knowledge, 
+          there are no existing algorithms to perform this calculation. Further, the only existing method for computing persistent relative 
+          homology places heavy restrictions on the filtrations, and is indirect in that it only computes a persistence diagram summary. I am 
+          presently the lead author on a manuscript in preparation which proves the correctness and stability of our method. As an undergradute, 
+          I completed an honors thesis related to this work, which can be viewed at the links below. 
+          <div class="row">
+            <div class="column">
+              <a href="/files/MSCS_HonorsThesis_ChristianLentz.pdf"> <img class="img-clickable" src="/images/PRH_paper_screenshot.png" alt="PRH paper" /> </a> 
+            </div>
+            <div class="column">
+              <a href="/files/PRH_slides_honors.pdf"> <img class="img-clickable" src="/images/filteredSpace.png" alt="filtered topological space" /> </a> 
+            </div>
+          </div>
+        </p>
+    </section>
+
+    <section class="content">
+      <h3 id="prh-oat">Persistent Relative Homology in OAT</h3>
+        <p>
+          Related to the project above, I am currently working as the sole author of a software module to implement a flexible method 
+          for persistent relative homology with an emphasis on applications in TDA and data science. The implementation is written in low-level 
+          Rust for performance purposes, and is complete with Python bindings in the <a href="https://github.com/pnnl/oat_pnnl">Open Applied 
+          Topology (OAT)</a> project. The code utilizes modern data structures for matrix algebra which not only compress sparse matrices, but 
+          lazily generate their rows and columns on an as-needed basis, allowing this algorithm to circumvent major memory use choke-points 
+          that have previously plagued algorithms in applied topology. The images below give a simple example of our algorithm in action during 
+          its early stages of implementation and testing. 
+          <div class="gallery">
+            <img class="img-gallery" src="/images/prh_homological.png" alt="relative gens image" />
+            <img class="img-gallery" src="/images/prh_homological_code.png" alt="relative gens code" /> 
+          </div>
+        </p>
+    </section>
+
+    <section class="title"><h2 id="undergraduate">Undergraduate Capstones</h2>
+    
+    </section>
 
   </div>
 
 <script src="/assets/js/scale.fix.js"></script>
+<script src="/assets/js/image.gallery.js"></script>
 
 </body>
 

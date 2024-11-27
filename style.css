@@ -1,122 +1,117 @@
-/* fonts */
-@font-face { font-family: 'Noto Sans'; font-weight: 400; font-style: normal; src: url("../fonts/Noto-Sans-regular/Noto-Sans-regular.eot"); src: url("../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix") format("embedded-opentype"), local("Noto Sans"), local("Noto-Sans-regular"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2") format("woff2"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.woff") format("woff"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf") format("truetype"), url("../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans") format("svg"); }
-@font-face { font-family: 'Noto Sans'; font-weight: 700; font-style: normal; src: url("../fonts/Noto-Sans-700/Noto-Sans-700.eot"); src: url("../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold"), local("Noto-Sans-700"), url("../fonts/Noto-Sans-700/Noto-Sans-700.woff2") format("woff2"), url("../fonts/Noto-Sans-700/Noto-Sans-700.woff") format("woff"), url("../fonts/Noto-Sans-700/Noto-Sans-700.ttf") format("truetype"), url("../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans") format("svg"); }
-@font-face { font-family: 'Noto Sans'; font-weight: 400; font-style: italic; src: url("../fonts/Noto-Sans-italic/Noto-Sans-italic.eot"); src: url("../fonts/Noto-Sans-italic/Noto-Sans-italic.eot?#iefix") format("embedded-opentype"), local("Noto Sans Italic"), local("Noto-Sans-italic"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2") format("woff2"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.woff") format("woff"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf") format("truetype"), url("../fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans") format("svg"); }
-@font-face { font-family: 'Noto Sans'; font-weight: 700; font-style: italic; src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot"); src: url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.eot?#iefix") format("embedded-opentype"), local("Noto Sans Bold Italic"), local("Noto-Sans-700italic"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2") format("woff2"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff") format("woff"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf") format("truetype"), url("../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans") format("svg"); }
-
-/* body styling */ 
-.body-wrapper { 
+/* BODY STYLING */ 
+/* the canvas element holds animations and is contained in the body element */
+canvas {
+    display: block;
+    margin: auto;
+    position: absolute;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* this div wraps any type of section element (classes include title or content) */
+.main-body-wrapper { 
     width: 75%; 
     margin: 0 auto; 
 }
 section { 
     width: 65%; 
-    float: right;
+    background-color: black; 
+    float: right; 
 }
 .title { 
-    padding-bottom: 7px; 
     padding-top: 7px; 
 }
 .content { 
-    padding: 7px; 
-    display: inline-block;
+    padding-top: 5px; 
 }
+/* header/footer */
+.header-footer-wrapper { 
+    float: left; 
+    padding-left: 10%; 
+}
+header { 
+    text-align: center; 
+    display: inline-block; 
+    width: 20%; position: fixed; 
+    -webkit-font-smoothing: subpixel-antialiased; }
+footer { 
+    text-align: center;
+    display: inline-block; 
+    width: 20%; 
+    position: fixed; 
+    bottom: 50px; 
+    -webkit-font-smoothing: subpixel-antialiased; }
+/* list items of nav bar */
+/* (this is contianed in the footer) */ 
+#navright {
+    text-align: left; 
+    list-style-type: none; 
+    font-size: 17.5px;
+    display: inline-block;
+    margin: auto; 
+}
+/* list items */ 
+#body-list {
+    text-align: left; 
+    list-style-type: none;
+}
+/* this is the actual body element, containing the canvas, main-body, and header-footer */
 body { 
-    background-image: radial-gradient(rgba(0, 0, 0, 0.703), #212020, #232323);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-color: black;
     height: 100vh;
     padding: 100px; 
     font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
-} 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} 
-
-/* header and footer styling */
-.header-footer-wrapper { float: left; padding-left: 10%; }
-header { text-align: center; display: inline-block; width: 20%; position: fixed; -webkit-font-smoothing: subpixel-antialiased; }
-footer { text-align: center; display: inline-block; width: 20%; position: fixed; bottom: 50px; -webkit-font-smoothing: subpixel-antialiased; }
-
-/* nav bar styling (this is contianed in the footer) */ 
-/* center the entire nav bar div */
-#navright {
-    text-align: center;
-    list-style-type: none; 
-    font-size: 20px;
-}
-/* list styling for items on the nav bar, wrapped in ul */
-#nav-items-wrapper {
-    margin: auto;
-    display: inline-block;
-}
-/* style for each item on the nav bar */
-#nav-item {
-    float: left;
 }
 
-/* title and content styling */
-h1, h2, h3, h4, h5, h6, p { color: whitesmoke; margin: 0 0 10px; }
+/* TITLE AND TEXT */
+h1, h2, h3, h4, h5, h6, p { color: whitesmoke; margin: 0 0 10px; padding-top: 3px;}
 ol, table, pre, dl { margin: 0 0 20px; } 
 h1, h2, h3 { line-height: 1.1; }
 h1 { font-size: 50px;}
-h2 { font-size: 36px; }
+h2 { font-size: 36px; text-decoration-line: underline; }
 h3, h4, h5 { font-size: 18px; }
-p { font-size: 14px; }
+p { font-size: 14px; padding-left: 10px; }
 
-/* clickable link styling */
-a { color: #267CB9; text-decoration: none; }
-a:hover, a:focus { color: rgb(240, 244, 6); font-weight: bold; text-decoration: underline;}
+/* CLICKABLE LINKS */
+a { color: lime; text-decoration: none; }
+a:hover, a:focus { color: red; font-weight: bold; text-decoration: underline;}
 a small { font-size: 11px; color: #777; margin-top: -0.3em; display: block; }
-a:hover small { color: rgb(240, 244, 6); }
+a:hover small { color: red; }
 
-/* general image styling */ 
+/* IMAGES */ 
+/* general */
 img { 
-    display: inline-flex; 
+    display: inline-flex;  
     border: 1px solid #ddd;
     border-radius: 2px;
     padding: 3px;
-}
-
-/* header image styling */ 
-.img-header { 
     width: fit-content;
-    max-width: 60%;
     height: fit-content;
+}
+/* header */ 
+.img-header { 
+    max-width: 60%;
     max-height: 60%;
 }
 .img-header:hover, .img-header:focus { 
-    border: 3px solid rgb(240, 244, 6);
+    border: 3px solid red;
     border-radius: 4px;
     padding: 5px;
 }
-
-/* clickable image styling */
+/* clickable */
 .img-clickable { 
-    width: fit-content;
     max-width: 80%;
-    height: fit-content;
     max-height: 80%;
 }
 .img-clickable:hover, .img-clickable:focus { 
-    border: 3px solid rgb(240, 244, 6);
+    border: 3px solid red;
     border-radius: 4px;
     padding: 5px;
-    width: fit-content;
     max-width: 85%;
-    height: fit-content;
     max-height: 85%;
 }
-
-/* row-aligned image styling */
 .row {
     display: inline-flex;
     text-align: center;
@@ -126,8 +121,31 @@ img {
     flex: 33.33%;
     padding: 7px;
 }
+/* rotating gallery */ 
+.gallery { 
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    text-align: center; 
+}
+.img-gallery { 
+    max-width: 75%;
+    max-height: 75%;
+    /* for gallery transitions */
+    opacity: 0;                                         
+    transform: translateX(100%);                        
+    transition: opacity 0.5s ease, transform 1s ease;   
+}
+.img-gallery.active { 
+    opacity: 1;                
+    transform: translateX(0);  /* centered */
+}
+.img-gallery.inactive { 
+    opacity: 0;
+    transform: translateX(-100%);
+}
 
-/* media styling */
+/* MEDIA */
 @media print, screen and (max-width: 960px) { div.wrapper { width: auto; margin: 0; }
   header, section, footer { float: none; position: static; width: auto; }
   header { padding-right: 320px; }

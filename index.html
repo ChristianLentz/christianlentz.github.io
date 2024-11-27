@@ -33,6 +33,9 @@
 
 <body>
 
+  <!-- note that the canvas appears within the body, but is layered such that the elements of the body appear above the animated elements of the canvas! -->
+  <canvas id="animationCanvas"></canvas>
+
   <div class="header-footer-wrapper">
 
     <!-- website header: image, name, contact, navbar, etc. -->
@@ -40,16 +43,6 @@
       <h1>Christian Lentz</h1>
       <p>BA, Mathematics and Computer Science</p>
       <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
-      <nav id="nav-bar">
-        <div id="navright">
-          <ul id="nav-items-wrapper"></ul>
-            <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
-            <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
-            <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
-            <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li>
-          </ul>
-        </div>
-      </nav>
     </header>
 
     <!-- footer and contact info -->
@@ -70,21 +63,35 @@
   </div>
 
   <!-- page content -->
-  <div class="body-wrapper">
+  <div class="main-body-wrapper">
 
-    <section class="title"><h2 id="about">About Me</h2></section>
-
-    <!-- <section class="content">
-      <p>I am a recent graduate of Macalester College in St. Paul, Minnesota where I obtained BA with a double major 
+    <section class="title"><h2 id="about">Welcome!</h2></section>
+    <section class="content">
+      <p>
+        I am a recent graduate of Macalester College in St. Paul, Minnesota where I obtained a BA with a double major 
         in Mathematics and Computer Science. I am a lifelong learner and am always ready to take on a new challenge 
         or learn a new skill. I have recently relocated to the greater Boston area and am actively pursuing opportunities 
-        to further my career and education. I am particularly passionate about topics in algorithms, machine learning, 
-        and topology. Check out <a href="files/ChristianLentz_Resume.pdf">my resume</a> to learn more about my background. 
-    </section> -->
+        to further my career and education. I am passionate about topics in algorithms, machine learning, software,
+        topology and geometry. 
+        
+        <!-- Check out <a href="files/ChristianLentz_Resume.pdf">my resume</a> to learn more about my background. -->
 
-    <section class="title"><h2 id="projects">Useful Links</h2></section>
+      </p>
+    </section>
 
-      <!-- <section class="content">
+    <section><h2 id="links">Useful Links</h2></section>
+    <section>
+      <nav id="nav-bar">
+        <div id="navright">
+          <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
+          <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
+          <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
+          <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li>
+        </div>
+      </nav>
+    </section>
+
+    <!-- <section class="content">
         <h3 id="prh-tda">Persistent Relative Homology for TDA</h3>
           <h4 id="prh-tda-date">05/2023 - present</h4>
             <h5 id="prh-tda-description">Honors Research</h5>
@@ -230,7 +237,8 @@
 
   </div>
 
-<script src="/assets/js/scale.fix.js"></script>
+  <script src="/assets/js/scale.fix.js"></script>
+  <script src="/assets/js/simplicial.animate.js"></script>
 
 </body>
 
