@@ -15,7 +15,7 @@ canvas {
     width: 75%; 
     margin: 0 auto; 
 }
-section { 
+section{ 
     width: 65%; 
     background-color: black; 
     float: right; 
@@ -57,6 +57,15 @@ footer {
     text-align: left; 
     list-style-type: none;
 }
+#cv-list { 
+    text-align: left;
+    margin-bottom: 7px; 
+}
+#cv-list li { 
+    font-size: 14px; 
+    padding-left: 15px;
+    color: whitesmoke;
+}
 /* this is the actual body element, containing the canvas, main-body, and header-footer */
 body { 
     background-color: black;
@@ -64,15 +73,46 @@ body {
     padding: 100px; 
     font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
+/* page breaks */ 
+.page-break {
+    position: relative;
+    height: 2px;
+    background: lime;
+    overflow: hidden;
+}
+/* animating the page breaks! */
+/* .page-break::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, red, transparent);
+    animation: slide 2s infinite;
+} 
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+} */
 
 /* TITLE AND TEXT */
-h1, h2, h3, h4, h5, h6, p { color: whitesmoke; margin: 0 0 10px; padding-top: 3px;}
-ol, table, pre, dl { margin: 0 0 20px; } 
-h1, h2, h3 { line-height: 1.1; }
-h1 { font-size: 50px;}
-h2 { font-size: 36px; text-decoration-line: underline; }
-h3, h4, h5 { font-size: 18px; }
-p { font-size: 14px; padding-left: 10px; }
+/* various text fields and types */
+h1, h2, h3, h4, p { color: whitesmoke; }
+h1, h2, h3 { line-height: 1.1; padding-top: 3px; margin: 0 0 10px; }
+h1 { font-size: 50px;}                                             /* page title (my name!) */
+h2 { font-size: 36px; margin-bottom: 0; }                          /* section titles for body of each page */
+h3 { font-size: 22px; }                                            /* project/subsetion titles for body of each page */
+h4 { font-size: 15px; margin-top: 0; margin-bottom: 0; }           /* slideshow image alt text */      
+p { font-size: 14px; padding-left: 10px; }                         /* paragraphs */   
+/* a line of text with substrings that are aligned differently (right vs. left) */ 
+.line { 
+    overflow: hidden; 
+}
+.left { 
+    float: left; 
+}
+.right { 
+    float: right; 
+}
 
 /* CLICKABLE LINKS */
 a { color: lime; text-decoration: none; }
@@ -84,11 +124,9 @@ a:hover small { color: red; }
 /* general */
 img { 
     display: inline-flex;  
-    border: 1px solid #ddd;
+    border: 2px solid lime;
     border-radius: 2px;
     padding: 3px;
-    width: fit-content;
-    height: fit-content;
 }
 /* header */ 
 .img-header { 
@@ -111,7 +149,9 @@ img {
     padding: 5px;
     max-width: 85%;
     max-height: 85%;
+    cursor: pointer; 
 }
+/* row-aligned image contianers */ 
 .row {
     display: inline-flex;
     text-align: center;
@@ -120,29 +160,37 @@ img {
 .column {
     flex: 33.33%;
     padding: 7px;
+    width: fit-content; 
+    height: fit-content; 
 }
-/* rotating gallery */ 
-.gallery { 
-    position: relative;
-    width: fit-content;
-    height: fit-content;
+/* slideshow images and containers */ 
+.slideshow-container { 
     text-align: center; 
 }
-.img-gallery { 
-    max-width: 75%;
-    max-height: 75%;
-    /* for gallery transitions */
-    opacity: 0;                                         
-    transform: translateX(100%);                        
-    transition: opacity 0.5s ease, transform 1s ease;   
+.phantom-slideshow { 
+    position: relative; 
 }
-.img-gallery.active { 
-    opacity: 1;                
-    transform: translateX(0);  /* centered */
+.phantom-img { 
+    position: absolute; 
+    opacity: 0;                                       
+} 
+.slideshow-screen img {
+    display: inline-flex;
+    width: fit-content; 
+    height: fit-content; 
+    max-width: 95%;
+} 
+#next-button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    color: black;
+    background-color: lime;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.img-gallery.inactive { 
-    opacity: 0;
-    transform: translateX(-100%);
+#next-button:hover {
+    border: 3px solid red;
 }
 
 /* MEDIA */

@@ -10,7 +10,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 // array to hold the points that we display on the page
 const points = [];
-const numPoints = 60;
+const numPoints = 80;
 // threshold for building the simplicial complex 
 // this is (and will remain) the same for each point
 const threshold = canvas.width/11.5; 
