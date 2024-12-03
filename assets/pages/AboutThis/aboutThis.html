@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Christian Lentz | Home </title>
+  <title>Christian Lentz | About </title>
+  <!-- inherits home page styling and implements new styling -->
   <link href="/style.css" rel="stylesheet">
+  <link href="/assets/pages/AboutThis/style.css" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/images/favicons/favicon_topArt1.ico">
   <!-- Begin Jekyll SEO tag v2.8.0 -->
   <meta name="generator" content="Jekyll v3.9.3" />
-  <meta property="og:title" content="About Me" />
+  <meta property="og:title" content="About" />
   <meta property="og:locale" content="en_US" />
-  <meta name="description" content="Welcome to my portfolio!" />
-  <meta property="og:description" content="Welcome to my portfolio!" />
+  <meta name="description" content="About this project" />
+  <meta property="og:description" content="About this project" />
   <link rel="canonical" href="http://localhost:4000/" />
-  <meta property="og:url" content="https://christianlentz.github.io/" />
+  <meta property="og:url" content="https://christianlentz.github.io/about-this-project" />
   <meta property="og:site_name" content="Christian Lentz" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
-  <meta property="twitter:title" content="About Me" />
+  <meta property="twitter:title" content="" />
   <script type="application/ld+json">
     {"@context":"https://schema.org",
     "@type":"WebSite",
@@ -40,9 +42,19 @@
 
     <!-- website header: image, name, contact, navbar, etc. -->
     <header>
-      <h1>Christian Lentz</h1>
-      <p>BA, Mathematics and Computer Science</p>
-      <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
+        <h1>Christian Lentz</h1>
+        <p>BA, Mathematics and Computer Science</p>
+        <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
+        <nav id="nav-bar">
+          <div id="navright">
+            <ul id="nav-items-wrapper"></ul>
+              <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
+              <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
+              <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
+              <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li>
+            </ul>
+          </div>
+        </nav>
     </header>
 
     <!-- footer and contact info -->
@@ -63,37 +75,15 @@
   </div>
 
   <!-- page content -->
-  <div class="main-body-wrapper">
+  <div class="body-wrapper">
 
-    <section class="title"><h2 id="about">Welcome!</h2></section>
-    <section class="content">
-      <p>
-        I am a recent graduate of Macalester College in St. Paul, Minnesota where I obtained a BA with a double major 
-        in Mathematics and Computer Science. I have recently relocated to the greater Boston area and am actively pursuing 
-        opportunities to further my career and education. I am passionate about topics in algorithms, machine learning, software,
-        topology and geometry. 
-        
-        <!-- Check out <a href="files/ChristianLentz_Resume.pdf">my resume</a> to learn more about my background. -->
-
-      </p>
-    </section>
-
-    <section><h2 id="links">Useful Links</h2></section>
-    <section>
-      <nav id="nav-bar">
-        <div id="navright">
-          <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
-          <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
-          <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
-          <!-- <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li> -->
-        </div>
-      </nav>
-    </section>
+    <section class="title"><h2 id="research-interests">About</h2></section>
+    <section class="title"><h2 id="research-projects">Animations</h2></section>
+    <section class="title"><h2 id="research-projects">Development</h2></section>
 
   </div>
 
-  <script src="/assets/js/scale.fix.js"></script>
-  <script src="/assets/js/simplicial.animate.js"></script>
+<script src="/assets/js/scale.fix.js"></script>
 
 </body>
 

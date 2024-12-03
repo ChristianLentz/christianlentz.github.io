@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christian Lentz | CV </title>
+  <!-- inherits home page styling and implements new styling -->
+  <link href="/style.css" rel="stylesheet">
+  <link href="/assets/pages/CV/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/favicons/favicon_topArt1.ico">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <meta name="generator" content="Jekyll v3.9.3" />
+  <meta property="og:title" content="CV" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="My curriculum vitae" />
+  <meta property="og:description" content="My curriculum vitae" />
+  <link rel="canonical" href="http://localhost:4000/" />
+  <meta property="og:url" content="https://christianlentz.github.io/curriculum-vitae" />
+  <meta property="og:site_name" content="Christian Lentz" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="" />
+  <script type="application/ld+json">
+    {"@context":"https://schema.org",
+    "@type":"WebSite",
+    "description":"Macalester College, Mathematics and Compter Science",
+    "headline":"About Me",
+    "name":"Christian Lentz",
+    "url":"http://localhost:4000/"}
+  </script>
+  <!-- End Jekyll SEO tag -->
+</head>
+
+<body>
+
+  <!-- note that the canvas appears within the body, but is layered such that the elements of the body appear above the animated elements of the canvas! -->
+  <canvas id="animationCanvas"></canvas>
+
+  <div class="header-footer-wrapper">
+
+    <!-- website header: image, name, contact, navbar, etc. -->
+    <header>
+      <h1>Christian Lentz</h1>
+      <p>BA, Mathematics and Computer Science</p>
+      <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
+      <nav id="nav-bar">
+        <div id="navright">
+          <ul id="nav-items-wrapper"></ul>
+            <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
+            <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
+            <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
+            <!-- <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- footer and contact info -->
+    <footer>
+      <div class="row">
+        <div class="column">
+          <a href="https://github.com/ChristianLentz"> <img class="img-clickable" src="/images/github_logo.jpg" alt="github logo" /> </a> 
+        </div>
+        <div class="column">
+          <a href="https://www.linkedin.com/in/cjlentz23"> <img class="img-clickable" src="/images/linkedin_logo.jpg" alt="linkedin logo" /> </a> 
+        </div>
+        <div class="column">
+          <a href="mailto:christianlentz234@gmail.com"> <img class="img-clickable" src="/images/gmail_logo.jpg" alt="gmail logo" /> </a> 
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- page content -->
+  <div class="body-wrapper">
+
+    <section class="content"> 
+      <p>
+        Use these links to view or download PDF versions of my <a href="/files/ChristianLentz_CV.pdf">CV</a> and 
+        <a href="/files/ChristianLentz_Resume.pdf">resume</a>!
+      </p>
+    </section>
+
+    <section class="title"><h2 id="education">Education</h2> <hr class="page-break"> </section>
+
+    <section class="content">
+      <div class="line">
+        <div class="left"> <h3> Macalester College </h3> </div>
+        <div class="right"> <h3> St. Paul, MN  </h3> </div>
+      </div>
+      <div class="line">
+        <div class="left"> <h4> BA, Mathematics and Computer Science </h4> </div>
+        <div class="right"> <h4> 05/2024 </h4> </div>
+      </div>
+      <div id="cv-list">
+        <li> Summa Cum Laude, GPA 3.96/4.0 </li>
+        <li> Advisors: <a href="https://www.loriziegelmeier.com/">Lori Ziegelmeier</a> and <a href="https://sites.google.com/macalester.edu/susan-fox-profile/home">Susan Fox</a> </li>
+        <li> Honors Thesis: <a href="https://digitalcommons.macalester.edu/mathcs_honors/85/">Persistent Relative Homology for Topological Data Analysis</a> </li>
+      </div>
+      <div class="line">
+        <div class="left"> <h3> Oxford University </h3> </div>
+        <div class="right"> <h3> Oxford, England, UK </h3> </div>
+      </div>
+      <div class="line">
+        <div class="left"> <h4> Visiting Studnet, Mathematics </h4> </div>
+        <div class="right"> <h4> 01/2023 - 06/2023 </h4> </div>
+      </div>
+      <div id="cv-list">
+        <li> St. Catherine's College </li>
+        <li> Relevant Coursework: Analysis II, Analysis III, Elementary Number Theory, Groups and Group Actions</li>
+      </div>
+    </section>
+
+    <section class="title"><h2 id="research">Research</h2> <hr class="page-break"> </section>
+
+    <section class="content">
+      <div class="line">
+        <div class="left"> <h3> University of Minnesota / Macalester College </h3> </div>
+        <div class="right"> <h3> St. Paul, MN </h3> </div>
+      </div> 
+      <div class="line">
+        <div class="left"> <h4> Research Assistant </h4> </div>
+        <div class="right"> <h4> 05/2023 - present </h4> </div>
+      </div>
+      <div id="cv-list">
+        <li> Algebraic and computational topology </li>
+        <li> Homological and sparse matrix algebra </li>
+        <li> Developed and implemented a novel algorithm to compute persistent relative homology which provides cycle representatives, persistence modules and barcode decompositions. </li>
+        <li> Advised by Lori Ziegelmeier (Macalester Col.) and Gregory Henselman-Petrusek </li>
+      </div>
+    </section>
+
+    <section class="title"><h2 id="teaching">Teaching</h2> <hr class="page-break"> </section>
+
+    <section class="content">
+      <div class="line">
+        <div class="left"> <h3> Macalester College </h3> </div>
+        <div class="right"> <h3> St. Paul, MN </h3> </div>
+      </div>
+      <div class="line">
+        <div class="left"> <h4> Teaching Assistant </h4> </div>
+        <div class="right"> <h4> 01/2022 - 05/2024 </h4> </div>
+      </div>
+      <div id="cv-list">
+        <li> Responsibilities: attend lectures, design and grade homework, hold office hours twice weekly </li>
+        <li> Linear Algebra, Spring 2022 </li>
+        <li> Introduction to Statistical Modeling, Fall 2022 </li>
+        <li> Computational Geometry, Fall 2023 </li>
+        <li> Algorithm Design and Analysis, Spring 2024 </li>
+      </div>
+    </section>
+
+    <section class="title"><h2 id="publications">Publications</h2> <hr class="page-break"> </section>
+
+    <section class="content">
+      <div id="cv-list">
+        <li> Lentz, C. (2024). Persistent Relative Homology for Topological Data Analysis. Mathematics, Statistics, and Computer Science Honors Projects. 85. <a href="https://digitalcommons.macalester.edu/mathcs_honors/85.">https://digitalcommons.macalester.edu/mathcs_honors/85.</a> </li>
+        <li> Lentz, C., Henselman-Petrusek G., Ziegelmeier L. (in prep). A U-match Algorithm for Persistent Relative Homology. </li>
+      </div>
+    </section>
+
+    <section class="title"><h2 id="talks-presentations">Talks & Presentations</h2> <hr class="page-break"> </section>
+
+    <section class="content">
+      <h3> Invited Talks </h3>
+      <div id="cv-list">
+        <li> 2024 January: Joint Mathematics Meetings, AIM-AMS Special Session on Applied Topology Beyond Persistence Diagrams, A computational approach for persistent relative homology. </li>
+      </div>
+      <h3> Contributed Talks </h3>
+      <div id="cv-list">
+        <li> 2023 September: Fall Meeting of Mathematical Association of America NCS, A matrix factorization algorithm for persistent relative homology. </li>
+      </div>
+      <h3> Undergraduate Sessions </h3>
+      <div id="cv-list">
+        <li> 2023 October: Macalester College, Summer Showcase Seminar, A matrix factorization algorithm for persistent relative homology. </li>
+        <li> 2024 January: Joint Mathematics Meetings, PME Undergraduate Student Poster Session, A computational approach for persistent relative homology. </li>
+        <li> 2024 April: Undergraduate honors defense, Macalester College, Department of Mathematics, Statistics and Computer Science, Persistent relative homology for topological data analysis. </li>
+      </div>
+    </section>
+
+    <section class="title"><h2 id="awards-honors">Awards</h2> <hr class="page-break"> </section>
+
+    <section class="content">
+      <div class="line">
+        <div class="left"> <h3> Konhauser Achievement Award </h3> </div>
+        <div class="right"> <h3> Macalester College, 2024 </h3> </div>
+      </div>
+      <div id="cv-list">
+        <li> Awarded each year to a single student majoring in mathematics at Macalester College. </li>
+        <li> In recognition of outstanding academic record and demonstrated dedication to and interest in the field. </li>
+        <li> Established and funded in honor of Dr. Joseph D. Konhauser, professor and chair of the Macalester Mathematics Department 1968-1991.</li>
+      </div>
+      <div class="line">
+        <div class="left"> <h3> Dewitt Wallace Distinguished Scholarship </h3> </div>
+        <div class="right"> <h3> Macalester College, 2020-24 </h3> </div>
+      </div>
+      <div id="cv-list">
+        <li> Based on academic merit and awarded on a highly-competitive basis. </li>
+      </div>
+    </section>
+
+  </div>
+
+<script src="/assets/js/scale.fix.js"></script>
+
+</body>
+
+</html>

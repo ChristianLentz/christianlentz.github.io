@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christian Lentz | Research </title>
+  <!-- inherits home page styling and implements new styling -->
+  <link href="/style.css" rel="stylesheet">
+  <link href="/assets//pages//Research//style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/images/favicons/favicon_topArt1.ico">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+  <meta name="generator" content="Jekyll v3.9.3" />
+  <meta property="og:title" content="Research" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="My research interests and activities" />
+  <meta property="og:description" content="My research interests and activities" />
+  <link rel="canonical" href="http://localhost:4000/" />
+  <meta property="og:url" content="https://christianlentz.github.io/research" />
+  <meta property="og:site_name" content="Christian Lentz" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="" />
+  <script type="application/ld+json">
+    {"@context":"https://schema.org",
+    "@type":"WebSite",
+    "description":"Macalester College, Mathematics and Compter Science",
+    "headline":"About Me",
+    "name":"Christian Lentz",
+    "url":"http://localhost:4000/"}
+  </script>
+  <!-- End Jekyll SEO tag -->
+</head>
+
+<body>
+
+  <!-- note that the canvas appears within the body, but is layered such that the elements of the body appear above the animated elements of the canvas! -->
+  <canvas id="animationCanvas"></canvas>
+
+  <div class="header-footer-wrapper">
+
+    <!-- website header: image, name, contact, navbar, etc. -->
+    <header>
+      <h1>Christian Lentz</h1>
+      <p>BA, Mathematics and Computer Science</p>
+      <p> <a href="/index.html"><img class="img-header" src="/images/ChristianLentz_headshot.jpg" alt="headshot" /> </p> </a>
+      <nav id="nav-bar">
+        <div id="navright">
+          <ul id="nav-items-wrapper"></ul>
+            <li class="nav-item"><a href="/assets/pages/Research/research.html"> Research</a></li>
+            <li class="nav-item"><a href="/assets/pages/CV/cv.html"> Curriculum Vitae</a></li>
+            <li class="nav-item"><a href="/assets/pages/SkillsProjects/skillsProjects.html"> Skills & Projects</a></li>
+            <!-- <li class="nav-item"><a href="/assets/pages/AboutThis/aboutThis.html"> About This Project</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- footer and contact info -->
+    <footer>
+      <div class="row">
+        <div class="column">
+          <a href="https://github.com/ChristianLentz"> <img class="img-clickable" src="/images/github_logo.jpg" alt="github logo" /> </a> 
+        </div>
+        <div class="column">
+          <a href="https://www.linkedin.com/in/cjlentz23"> <img class="img-clickable" src="/images/linkedin_logo.jpg" alt="linkedin logo" /> </a> 
+        </div>
+        <div class="column">
+          <a href="mailto:christianlentz234@gmail.com"> <img class="img-clickable" src="/images/gmail_logo.jpg" alt="gmail logo" /> </a> 
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="main-body-wrapper">
+
+    <section class="title"><h2 id="research-interests">Interests</h2>
+      <hr class="page-break">
+      <div id="body-list">
+        <li> <h3>Mathematics:</h3> <p>Topology, Geometry, Homological algebra</p> </li>
+        <li> <h3>Applied Mathematics: </h3> <p>Numerical analysis, Applied algebra, Computational geometry</p> </li>
+        <li> <h3>Algorithms & Data Science: </h3> <p>Topological data analysis, Machine learning, Complexity Theory </p> </li>
+      </div>
+    </section>
+      
+    <section class="title"><h2 id="current-research">Current Projects</h2> <hr class="page-break"> </section>
+
+    <section class="content">
+      <h3 id="prh-alg">Exact and Stable Computation of Persistent Relative Homology</h3>
+        <p>
+          Working under Drs. <a href="https://www.loriziegelmeier.com/">Lori Ziegelmeier</a> and Gregory Henselman-Petrusek (PNNL), I
+          have developed a novel algorithm for the direct computation of persistent relative homology. Utilizing a recently presented 
+          <a href="https://arxiv.org/abs/2108.08831">matrix factorization scheme</a>, our method can compute cycle representatives and 
+          persistence modules for a pair of topological spaces equipped with arbitrary filtrations. The only restriction on these filtrations 
+          is that the inclusion of spaces be preserved at each level. To our knowledge, there are no existing algorithms to perform this 
+          calculation. Further, the only existing method for computing persistent relative homology places heavy restrictions on the filtrations, 
+          and is indirect in that it only computes a persistence diagram summary. I am presently the lead author on a manuscript in preparation 
+          which proves the correctness and stability of our method. As an undergradute, I completed an honors thesis related to this work, 
+          which can be viewed at the links below. 
+          <div class="row">
+            <div class="column">
+              <a href="/files/MSCS_HonorsThesis_ChristianLentz.pdf"> <img class="img-clickable" src="/images/PRH_paper_screenshot.png" alt="PRH paper" /> </a> 
+            </div>
+            <div class="column">
+              <a href="/files/PRH_slides_honors.pdf"> <img class="img-clickable" src="/images/filteredSpace.png" alt="filtered topological space" /> </a> 
+            </div>
+          </div>
+        </p>
+    </section>
+
+    <section class="content">
+      <h3 id="prh-oat">Persistent Relative Homology for Data Science</h3>
+        <p>
+          Related to the project above, I am currently working as the sole author of a software module to implement a flexible method 
+          for persistent relative homology with an emphasis on applications in TDA and data science. The implementation is written in low-level 
+          <a href="https://www.rust-lang.org/">Rust</a> for performance purposes, and is complete with Python bindings in the 
+          <a href="https://github.com/pnnl/oat_pnnl">Open Applied Topology (OAT)</a> project. The code utilizes modern data structures for matrix 
+          algebra which not only compress sparse matrices, but lazily generate their rows and columns on an as-needed basis, allowing this algorithm 
+          to circumvent major memory use choke-points that have previously plagued algorithms in applied topology. The images below give a simple 
+          example of our algorithm in action during its early stages of implementation and testing. 
+          <div class="slideshow-container">
+            <!-- NOTE: a div with class .phantom-slideshow adds text and images to be used to make a slidehsow. However, it's display is relative, 
+            so it will collapse and be ignored! We will display it's contents in another container with a script and styling! -->
+            <div class="phantom-slideshow">
+              <img class="phantom-img" src="/images/prh_homological.png" alt="A small simplicial complex with a sucomplex highlighted in red." />
+              <img class="phantom-img" src="/images/prh_homological_code.png" alt="Cycle representatives computed by software." /> 
+            </div>
+            <!-- NOTE: a div with class .slideshow-screen is where we actually display the contents of the .phantom-slideshow div. By extracting the 
+            contents from one div and displaying them in another, our Java Script does not rely on hardcoded data, but just needs to find and display 
+            elements of the page!  -->
+            <div class="slideshow-screen">
+              <img id="slideshow-img" src="/images/prh_homological.png" alt="A small simplicial complex with a sucomplex highlighted in red." />
+            </div>
+            <!-- a text description of the image, which rotates with the slideshow -->
+            <h4 id="slideshow-description"> phantom text here </h4>
+            <!-- we use this for rotating through the images and text! -->
+            <button id="next-button"> Next </button>
+          </div>
+        </p>
+    </section>
+
+    <section class="title"><h2 id="undergraduate">Undergraduate Capstones</h2> <hr class="page-break"> </section>
+
+    -- <section class="content">
+      <h3 id="conway-gol">Evolving Mobile Agents in Conway’s Game of Life</h3>
+        <p>
+          This project was completed as my computer science capstone during the Fall of 2023, when I took an introductory
+          course in Artificial Intelligence with my academic advisor <a href="https://sites.google.com/macalester.edu/susan-fox-profile/home">Susan Fox</a>. 
+          Using the popular cellular automaton <a href="https://conwaylife.com/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>, 
+          we investigated to capacity for agents (or cell tilings) within the game to exhibit emergent or intelligent behavior. 
+          The explicit goal was to write a genetic algorithm which, given a randomly generated popualtion of cell tilings, could 
+          be used to evolve subsequent generations of cell tilings which are capable of directed growth and movement. Our 
+          genetic algorithm is implemented in Python and required the NumPy library and elementary linear algebra in order 
+          to assess the behavior and fitness of the population. The project also includes a front-end animation built with 
+          Matplotlib. Check out the links below to see the project in more detail. 
+          <div class="row">
+            <div class="column">
+              <a href="https://github.com/ChristianLentz/MobileTilingsGOL"> <img class="img-clickable" src="/images/seed_directedMove2.gif" alt="tiling gif" /> </a> 
+            </div>
+            <div class="column">
+              <a href="/files/IntroToAI_paper.pdf"> <img class="img-clickable" src="/images/AI_paper_screenshot.png" alt="GOL paper" /> </a> 
+            </div>
+          </div>
+        </p>
+    </section>
+
+    <section class="content">
+      <h3 id="wave-eqn">Numerical Techniques for the Wave Equation</h3>
+        <p>
+          This project was completed as my mathematics capstone during the Fall of 2023, when I took a math modeling
+          course with <a href="https://sites.google.com/macalester.edu/willmitchell/home?pli=1">Will Mitchell</a>. This
+          was primarily an investigation of numerical techniques for approximating solutions to partial
+          differential equations, and in particular finite differences and the Fourier spectral method. I studied each of
+          these techniques using the wave equation, and implemented both. Check out the links below to see my work in 
+          more detail. 
+          <div class="row">
+            <div class="column">
+              <a href="/files/mathModeling_paper.pdf"> <img class="img-clickable" src="/images/FD_1D_5.png" alt="1D wave discrete" /> </a> 
+            </div>
+            <div class="column">
+              <a href="https://github.com/ChristianLentz/Math437Capstone"> <img class="img-clickable" src="/images/2DWaveVec2.gif" alt="2D wave GIF" /> </a> 
+            </div>
+          </div>
+        </p>
+    </section>
+
+  </div>
+
+<script src="/assets/js/scale.fix.js"></script>
+<script src="/assets/js/image.slideshow.js"></script>
+
+</body>
+
+</html>

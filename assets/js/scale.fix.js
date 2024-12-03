@@ -1,7 +1,6 @@
 /**
- * Scale webpage to make it viewable from PC or mobile
+ * Scale webpage to make it viewable from PC or mobile.
  */
-
 (function (document) {
     var metas = document.getElementsByTagName('meta'),
         changeViewportContent = function (content) {
