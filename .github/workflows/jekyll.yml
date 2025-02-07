@@ -48,8 +48,9 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       
-      - name: Ensure Ruby is in PATH
-        run: echo "$HOME/.gem/ruby/3.1.0/bin:$PATH" >> $GITHUB_ENV
+      # Following step is for debugging only
+      # - name: Ensure Ruby is in PATH
+      #   run: echo "$HOME/.gem/ruby/3.1.0/bin:$PATH" >> $GITHUB_ENV
       
       - name: Setup Pages
         id: pages
