@@ -65,6 +65,7 @@ footer {
     font-size: 14px; 
     padding-left: 15px;
     color: whitesmoke;
+    list-style-position: inside;
 }
 /* this is the actual body element, containing the canvas, main-body, and header-footer */
 body { 
