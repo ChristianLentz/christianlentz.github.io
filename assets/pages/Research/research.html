@@ -80,13 +80,16 @@
     <section class="title"><h2 id="research-interests">Interests</h2>
       <hr class="page-break">
 
-      <p>A few specific research directions that I am currently interested in include (1) general-purpose methods for computing persistent relative 
-        homology and applications to data science, (2) algorithm unrolling techniques for implementing deep neural networks, (3) the Laplace-Beltrami 
-        operator and its applications to geometric deep learning and (4) formalization of the manifold hypothesis. My broad interests are listed below. </p>
+      <p>
+        I am interested in the development of novel techniques for data science and machine learning with theoretical foundations in geometry and topology along with  
+        performant algorithms and data structures for their implementation. A few specific research directions that I am currently interested in include (1) general-purpose 
+        methods for computing persistent relative homology and applications to data science, (2) algorithm unrolling techniques for implementing deep neural networks, (3) 
+        the Laplace-Beltrami operator and its applications to geometric deep learning and (4) formalization of the manifold hypothesis. My broad interests are listed below. 
+      </p>
 
       <div id="body-list">
         <li> <h3>Mathematics</h3> <p>Topology, Geometry, Homological algebra</p> </li>
-        <li> <h3>Applied Mathematics</h3> <p>Numerical linear algebra, Computational geometry</p> </li>
+        <li> <h3>Applied Mathematics</h3> <p>Numerical analysis & linear algebra, Computational geometry, Optimization</p> </li>
         <li> <h3>Algorithms & Data Science</h3> <p>Topological data analysis, (Geometric) machine learning, Complexity theory</p> </li>
       </div>
     </section>
@@ -94,6 +97,23 @@
     <section class="title"><h2 id="projects">Projects</h2> <hr class="page-break"> </section>
 
     <section class="content">
+      <h3 id="prh-oat">Foundations and Applications of the Laplace-Beltrami Operator</h3>
+        <p>
+           This review paper was written for a graduate topics course on the mathematical foundations of AI. We investigate the Laplace-Beltrami operator and provide a 
+           definition of the operator starting only with a definition of a topological manifold. This background is accompanied with motivating examples and foundational 
+           proofs. The operator is seen as a generalization of the standard Laplacian to functions defined on manifolds, and thus our analysis emphasizes connections to 
+           discrete methods of dimensionality reduction, and explains how Laplace-Beltrami may be used to formulate continuous variations of the well-known Laplacian 
+           Eigenmap and Locally Linear Embedding methods. Our discussion includes key properties of the operator, and investigates applications including heat flow on 
+           a manifold, geometry processing, and Laplacian autoencoders. View the project at the links below. 
+          <div class="row">
+            <div class="column">
+              <a href="/files/LBO_paper_ChristianLentz.pdf"> <img class="img-clickable" src="/images/LBO_paper_screenshot.png" alt="LBO paper" /> </a> 
+            </div>
+            <div class="column">
+              <a href="/files/LBO_slides_ChristianLentz.pdf"> <img class="img-clickable" src="/images/mobius_heat_spike.png" alt="heat spike on Möbius strip" /> </a> 
+            </div>
+          </div>
+        </p>
       <h3 id="prh-oat">Persistent Relative Homology for Data Science</h3>
         <p>
           I am currently working as the sole author of an open-source software module to implement a general-purpose method to compute
@@ -138,7 +158,7 @@
           developed a novel algorithm for the direct computation of persistent relative homology. Utilizing a recently presented 
           <a href="https://arxiv.org/abs/2108.08831">matrix factorization scheme</a>, our method can compute the barcode decomposition 
           and persistence module of a pair of topological spaces equipped with arbitrary filtrations. The only restriction on these filtrations 
-          is that the inclusion of spaces is preserved at each level. This is the most general formulation of Persistent Relative homology, and 
+          is that the inclusion of spaces is preserved at each level. This is the most general formulation of persistent relative homology, and 
           our work provides a novel and simplified framework for studying it and its variants via U-match decomposition. I completed an undergraduate 
           honors thesis related to this work, which can be viewed at the links below. 
           <div class="row">
