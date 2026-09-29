@@ -102,6 +102,24 @@
         </p>
     </section>
 
+    <section class="content">
+      <h3 id="trade-center">Proof & Writing Samples</h3>
+        <p>
+          Below are two homework assignments that I completed during my MS degree. First is an assignment on numerical methods for 
+          ODEs as part of my graduate course in numerical analysis. As part of this assignemnt, I implemented an implicit Euler time-stepping 
+          method to solve a predator-prey ODE system using R. Second is an assignemnt for a graduate topics course on artificial intelligence. 
+          As part of this assignment, I studied PCA as an optimal linear autoencoder and the optimality conditions of the Laplacian Eigenmap. 
+          <div class="row">
+            <div class="column">
+              <a href="/files/NumericalAnalysis_SampleHW.pdf"> <img class="img-clickable" src="/images/predator-prey.png" alt="ode-predator-prey" /> </a> 
+            </div>
+            <div class="column">
+              <a href="/files/AI_SampleHW.pdf"> <img class="img-clickable" src="/images/eigenmaps.png" alt="eigen-map-proofs" /> </a> 
+            </div>
+          </div>
+        </p>
+    </section>
+
     <section class="title"><h2 id="languages">Programming Languages</h2>
       <hr class="page-break">
       <div id="body-list">
@@ -157,10 +175,28 @@
     </section>
 
     <section class="content">
+      <h3 id="digit-recognizer"> Geometrically-Informed Dictionary Learning </h3>
+        <p>
+          This project was completed as homework for a graduate topics course on the matheamtical foundations of artificial intelligence at 
+          Tufts University. Given a data set, my goal was to represent each data point as a sparse linear combination of dictionary atoms 
+          with the constraint that (1) the sparse codes lie on the probability simplex and (2) the minimization problem has a distnace-weighted 
+          L1 regularization, which allows the learned atoms to inform about the geometry of the data. I proved that the sparse coding can 
+          be computed via a (Euclidean) projected gradient descent onto the probability simplex. I described how to implement this dictionary 
+          learning algorithm by unrolling to a neural network, and implemented an alternating minimization approach in Python. See my write-up 
+          and code below. 
+          <div class="row">
+            <div class="column">
+              <a href="/files/DictionaryLearningHW.pdf"> <img class="img-clickable" src="/images/2DSwissRoll_atoms.png" alt="dict-learning" /> </a> 
+            </div>
+          </div>
+        </p>
+    </section>
+
+    <section class="content">
       <h3 id="digit-recognizer"> Digit Classififcation Algorithm </h3>
         <p>
           This was a brief personal project inspired by a homework assignment in my undergraduate numerical analysis course. 
-          Using a dataset containing nearly 10,000 images of handwritten digits (0-9), I wrote two machine learning algorithms to 
+          Using the MNIST dataset containing nearly 10,000 images of handwritten digits (0-9), I wrote two machine learning algorithms to 
           classify the images. The first algorithm uses a Least Squares approach, and is implemented in three different ways
           including via the normal equations, the built in QR algorithm in R, and via the Singular Value Decomposition. The other 
           approach uses the Low Rank Approximation via the Singular Value Decomposition. Check out the project below. 
